@@ -1,5 +1,7 @@
 import { Canvas } from "@react-three/fiber";
 import React from "react";
+import Nav from "./components/Nav";
+import Buttons from "./components/Buttons";
 import "./style.css";
 import { OrbitControls } from "@react-three/drei";
 import { Bloom, EffectComposer, ToneMapping } from "@react-three/postprocessing";
@@ -10,6 +12,8 @@ const App = () => {
 
   return (
     <>
+   
+    
     <Canvas flat camera={{ fov: 35 }}>
       <OrbitControls />
       <ambientLight />
@@ -26,10 +30,10 @@ const App = () => {
       />
        
     </EffectComposer>
+    
     </Canvas >
-    <div className="w-full bg-white py-32">
-      <h1>Welcome to My Port Folio</h1>
-    </div>
+
+ 
     </>
   );
 };
